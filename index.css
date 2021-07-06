@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: white;
 }
 
@@ -155,7 +155,7 @@ body {
 }
 
 .about-us .aboutus-red-patch {
-  background-color: #bf1e2e;
+  background-color: #bd1622;
   padding: 12px 25px;
   max-width: max-content;
   border-radius: 8px;
@@ -167,21 +167,81 @@ body {
   color: white;
   margin-bottom: 3px;
   margin-top: 3px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 18px !important;
 }
 
 .about-us .aboutus-red-patch h4 {
   color: white;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 30px !important;
 }
 
 .about-us .aboutus-content p {
   color: black;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
   text-align: left;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+.website-mockup {
+  display: flex !important;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.website-mockup .laptop-div {
+  flex: 1.5;
+}
+
+.website-mockup .website-details {
+  background-color: #d2d2d2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 16px;
+  justify-content: flex-start;
+}
+
+.website-mockup .website-details h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: initial;
+  font-size: 22px;
+}
+
+#s14 h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 30px;
+  text-transform: initial;
+  margin-bottom: 8px;
+  user-select: none;
+}
+
+#s14 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 22px;
+  text-transform: initial;
+  margin: 0;
+  user-select: none;
+}
+
+#s14 p a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #bd1622;
+  font-size: 22px;
+  text-transform: initial;
+  margin: 0;
+  user-select: none;
 }
