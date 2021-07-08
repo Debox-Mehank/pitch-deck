@@ -245,3 +245,11 @@ body {
   margin: 0;
   user-select: none;
 }
+
+.videos-grid {
+  margin: 0 auto;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
