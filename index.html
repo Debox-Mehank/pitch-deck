@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css" />
     <script src="dist/reveal.js"></script>
     <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
     <script
       src="https://kit.fontawesome.com/b0f29e9bfe.js"
       crossorigin="anonymous"
@@ -58,6 +59,38 @@
               table and strategies that will impact your bottom line.
             </p>
           </div>
+        </section>
+        <section>
+          <div
+            class="chart-container"
+            style="position: relative; height: 400px; width: 400px"
+          >
+            <canvas id="myChart"></canvas>
+          </div>
+          <script>
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myChart = new Chart(ctx, {
+              type: "doughnut",
+              data: {
+                labels: ["80%", "20%"],
+                datasets: [
+                  {
+                    label: "My First Dataset",
+                    data: [80, 20],
+                    backgroundColor: ["#bd1622", "#d2d2d2"],
+                    hoverOffset: 4,
+                  },
+                ],
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                  },
+                },
+              },
+            });
+          </script>
         </section>
         <section
           id="s4"
@@ -253,12 +286,34 @@
             data-background-image="images/3d models/ICECREAM_justChill1.jpg"
           ></section>
         </section>
-        <section
-          id="s10"
-          data-background-image="images/Debox_Deck_Presentation-10.jpg"
-          data-background-size="cover"
-          data-background-position="center"
-        ></section>
+        <section id="s10">
+          <section
+            data-background-image="images/Debox_Deck_Presentation-10.jpg"
+            data-background-size="cover"
+            data-background-position="center"
+          ></section>
+          <section>
+            <img src="images/print/Print_1.png" alt="">
+          </section>
+          <section>
+            <img src="images/print/Print_2.png" alt="">
+          </section>
+          <section>
+            <img src="images/print/Print_3.png" alt="">
+          </section>
+          <section>
+            <img src="images/print/Print_6.png" alt="">
+          </section>
+          <section>
+            <img src="images/print/Print_4.png" alt="">
+          </section>
+          <section>
+            <img src="images/print/Print_7.png" alt="">
+          </section>
+          <section>
+            <img src="images/print/Print_5.png" alt="">
+          </section>
+        </section>
         <section id="s11">
           <section
             data-background-image="images/Debox_Deck_Presentation-11.jpg"
@@ -324,7 +379,7 @@
             <div id="video-mask3">
               <video controls id="video3">
                 <source
-                  src="videos/Blisstree_June24_Millets_Promo_Sound.mp4"
+                  src="videos/Blisstree_June24_Millets_Creative_Sound.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -365,14 +420,16 @@
                 <source src="videos/BBK_CR_V58.mp4" type="video/mp4" />
               </video>
               <video loop controls>
-                <source src="videos/Aaha_May21_Bucket Animation_Creative_Sound.mp4" type="video/mp4" />
+                <source
+                  src="videos/Aaha_May21_Bucket Animation_Creative_Sound.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </section>
           <section
             data-background-video="videos/Blisstree_June24_Millets_Promo_Sound.mp4"
             data-background-video-loop
-            data-background-video-muted
           ></section>
           <section data-background-color="white">
             <div class="videos-grid">
