@@ -316,3 +316,27 @@ body {
     display: none !important;
   }
 } */
+.slide-title {
+  color: #000 !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400 !important;
+  font-size: 30px !important;
+  text-align: left;
+}
+
+.slide-title-fullscreen {
+  color: #000 !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400 !important;
+  font-size: 30px !important;
+  text-align: left;
+  vertical-align: top;
+  background-color: white;
+  padding: 12px 25px;
+  max-width: max-content !important;
+  max-height: max-content !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* height: unset !important; */
+  height: max-content !important;
+}
