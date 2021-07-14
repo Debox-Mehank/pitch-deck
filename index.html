@@ -50,33 +50,16 @@
         </div>
       </section>
       <section>
-        <div class="chart-container" style="position: relative; height: 400px; width: 400px">
-          <canvas id="myChart"></canvas>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+          <div class="chart-container">
+            <p class="chart-title">Client Retention Rate</p>
+            <canvas id="pieChart"></canvas>
+          </div>
+          <div class="chart-container">
+            <p class="chart-title">Campaign ROI</p>
+            <canvas id="roiChart"></canvas>
+          </div>
         </div>
-        <script>
-          var ctx = document.getElementById("myChart").getContext("2d");
-          var myChart = new Chart(ctx, {
-            type: "doughnut",
-            data: {
-              labels: ["80%", "20%"],
-              datasets: [
-                {
-                  label: "My First Dataset",
-                  data: [80, 20],
-                  backgroundColor: ["#bd1622", "#d2d2d2"],
-                  hoverOffset: 4,
-                },
-              ],
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: true,
-                },
-              },
-            },
-          });
-        </script>
       </section>
       <section id="s4" data-background-image="images/Debox_Deck_Presentation-04.jpg" data-background-size="cover"
         data-background-position="center"></section>
@@ -488,10 +471,6 @@
           data-background-position="center">
         </section>
       </section>
-      <section id="s14" data-background-color="white">
-        <h4>Sucker for more?</h4>
-        <p>Visit <a href="https://debox.co.in">debox.co.in</a></p>
-      </section>
       <section id="s15" data-background-image="images/Debox_Deck_Presentation-15.jpg" data-background-size="cover"
         data-background-position="center"></section>
       <section id="s17" data-background-image="images/Debox_Deck_Presentation-17.jpg" data-background-size="cover"
@@ -511,6 +490,10 @@
           <h4 class="slide-title">Testimonial</h4>
           <img data-src="images/testimonials/Debox_Deck_Presentation_Testimonials_v1.jpeg" alt="" />
         </section>
+      </section>
+      <section id="s14" data-background-color="white">
+        <h4>Sucker for more?</h4>
+        <p>Visit <a href="https://debox.co.in">debox.co.in</a></p>
       </section>
       <section id="s22">
         <img data-src="images/Debox_Deck_Presentation-22.jpg" alt="" />

@@ -273,15 +273,22 @@ body {
   height: 120px;
 }
 
-/* .tab-screen {
-  display: none !important;
+.chart-container {
+  position: relative;
+  width: 400px;
 }
 
-.normal-screen {
-  display: block !important;
+.chart-title {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .tab-screen {
     display: block !important;
   }
@@ -316,6 +323,7 @@ body {
     display: none !important;
   }
 } */
+
 .slide-title {
   color: #000 !important;
   font-family: "Montserrat", sans-serif;
