@@ -266,16 +266,91 @@ body {
   display: none;
 }
 
-#custom-down {
+#custom-controls {
   position: absolute;
-  bottom: 12%;
-  right: 0;
+  top: auto;
+  bottom: 12px;
+  right: 12px;
+  left: auto;
+  z-index: 11;
+  color: #000;
+  pointer-events: none;
+  font-size: 10px;
 }
 
-#custom-down img {
-  width: 120px;
-  height: 120px;
+#custom-controls button {
+  position: absolute;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  /* transform: scale(0.9999); */
+  transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+  z-index: 2;
+  pointer-events: auto;
+  font-size: inherit;
+  opacity: 0;
 }
+
+#custom-controls button img {
+  width: 40px;
+  height: 40px;
+}
+
+#custom-controls #navigate-left {
+  right: 6.4em;
+  bottom: 3.2em;
+  transform: rotate(90deg);
+}
+
+#custom-controls #navigate-right {
+  right: 0;
+  bottom: 3.2em;
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
+#custom-controls #navigate-up {
+  right: 3.2em;
+  bottom: 6.4em;
+  transform: rotate(180deg);
+}
+
+#custom-controls #navigate-down {
+  right: 3.2em;
+  bottom: 0;
+}
+
+/* #custom-controls #navigate-right {
+  right: 0;
+  bottom: 2.5em;
+  transform: rotate(-90deg);
+}
+#custom-controls #navigate-left {
+  right: 4em;
+  bottom: 2.5em;
+  transform: rotate(90deg);
+}
+#custom-controls #navigate-up {
+  right: 2em;
+  bottom: 5em;
+  transform: rotate(180deg);
+}
+#custom-controls #navigate-down {
+  right: 2em;
+  bottom: 0em;
+}
+
+#custom-controls img {
+  position: absolute;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+  pointer-events: auto;
+  width: 40px;
+  height: 40px;
+} */
 
 .chart-container {
   position: relative;
