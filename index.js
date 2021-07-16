@@ -29,7 +29,7 @@ Reveal.addEventListener("slidechanged", function (evt) {
       (h === 11 && v === 0) ||
       (h === 12 && v === 0)
     ) {
-      downArrow.setAttribute("src", "images/Arrow_White.gif");
+      downArrow.setAttribute("src", "images/White_Arrow.gif");
     } else {
       downArrow.setAttribute("src", "images/Arrow_Red.gif");
     }
