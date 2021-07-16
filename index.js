@@ -18,8 +18,6 @@ Reveal.addEventListener("slidechanged", function (evt) {
   const currentSlide = Reveal.getCurrentSlide();
   const { h, v, f } = Reveal.getIndices((slide = currentSlide));
 
-  console.log(h, v);
-
   // Down
   if (down) {
     rightArrow.setAttribute("src", "images/Arrow_Black.png");
@@ -72,11 +70,26 @@ Reveal.addEventListener("slidechanged", function (evt) {
 
 const handleLeft = (e) => {
   e.preventDefault();
-  Reveal.left();
+  const indices = Reveal.getIndices()["h"];
+  if (indices === 2 || indices === 6 || indices === 5) {
+    Reveal.left();
+  } else {
+    Reveal.slide(indices - 1, 0, 0);
+  }
 };
 const handleRight = (e) => {
   e.preventDefault();
-  Reveal.right();
+  const indices = Reveal.getIndices()["h"];
+  if (
+    indices + 1 === 2 ||
+    indices + 1 === 3 ||
+    indices + 1 === 5 ||
+    indices + 1 === 6
+  ) {
+    Reveal.right();
+  } else {
+    Reveal.slide(indices + 1, 0, 0);
+  }
 };
 const handleUp = (e) => {
   e.preventDefault();
@@ -86,24 +99,6 @@ const handleDown = (e) => {
   e.preventDefault();
   Reveal.down();
 };
-
-// const handleNext = (e) => {
-//   e.preventDefault();
-//   if (Reveal.isVerticalSlide()) {
-//     const { up, down, left, right } = Reveal.availableRoutes();
-//     if (down) {
-//       Reveal.next();
-//     } else {
-//       Reveal.ri;
-//     }
-//   }
-// };
-
-// const handlePrev = (e) => {
-//   console.log(Reveal.isVerticalSlide());
-//   e.preventDefault();
-//   Reveal.prev();
-// };
 
 buttonLeft.addEventListener("click", handleLeft);
 buttonRight.addEventListener("click", handleRight);
